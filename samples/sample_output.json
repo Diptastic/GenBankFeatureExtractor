@@ -1,0 +1,58 @@
+{
+  "counts": {
+    "source": 1,
+    "mRNA": 3,
+    "CDS": 3,
+    "gene": 3
+  },
+  "features": [
+    {
+      "type": "source",
+      "location": "1..5028"
+    },
+    {
+      "type": "mRNA",
+      "product": "TCP1-beta",
+      "location": "<1..>206"
+    },
+    {
+      "type": "CDS",
+      "product": "TCP1-beta",
+      "location": "<1..206"
+    },
+    {
+      "type": "gene",
+      "gene": "AXL2",
+      "location": "<687..>3158"
+    },
+    {
+      "type": "mRNA",
+      "location": "<687..>3158",
+      "product": "Axl2p",
+      "gene": "AXL2"
+    },
+    {
+      "type": "CDS",
+      "location": "687..3158",
+      "product": "Axl2p",
+      "gene": "AXL2"
+    },
+    {
+      "type": "gene",
+      "gene": "REV7",
+      "location": "complement(<3300..>4037)"
+    },
+    {
+      "type": "mRNA",
+      "product": "Rev7p",
+      "location": "complement(<3300..>4037)",
+      "gene": "REV7"
+    },
+    {
+      "type": "CDS",
+      "gene": "REV7",
+      "location": "complement(3300..4037)",
+      "product": "Rev7p"
+    }
+  ]
+}

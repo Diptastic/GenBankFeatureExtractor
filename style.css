@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 2em; }
+h1 { color: #4e79a7; }
+form { margin-bottom: 1em; }
+#resultText { margin-top: 1em; white-space: pre-wrap; }
+canvas { margin-top: 2em; }

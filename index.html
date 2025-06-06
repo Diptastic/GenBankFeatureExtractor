@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GenBank Feature Extractor</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      background: #f8f8f8;
+    }
+
+    h1 {
+      color: #4e79a7;
+    }
+
+    form {
+      margin-bottom: 1em;
+    }
+
+    input[type="file"] {
+      margin: 0.5em 0;
+    }
+
+    #featureTableContainer {
+      margin-top: 2em;
+      max-height: 400px;
+      overflow-y: auto;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    thead {
+      background-color: #f2f2f2;
+      position: sticky;
+      top: 0;
+    }
+
+    canvas {
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>GenBank Feature Extractor</h1>
+
+  <form id="uploadForm" method="post" enctype="multipart/form-data">
+    <label for="fileInput">Upload GenBank file:</label>
+    <input type="file" id="fileInput" name="genbank_file" accept=".gb,.gbk" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <canvas id="chartCanvas" width="500" height="300"></canvas>
+
+  <div id="featureTableContainer"></div>
+
+  <!-- ✅ Linked JS -->
+  <script src="script.js"></script>
+</body>
+</html>
